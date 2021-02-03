@@ -33,7 +33,6 @@ body{
     float: right;
   }
   .texto1 {
-    
     display: table-cell;
     float: left;
     width: 300px;
@@ -47,10 +46,7 @@ body{
     margin-left: 900px;
     padding-top: 100px;
   }
-img{
-    width: 600px;
-    height: 300px;
-}
+
 
 li, a, button{
     font-family: "Montserrat", sans-serif;
