@@ -7,8 +7,8 @@ a {  text-decoration: none; color: #fff; }
 .container h1{
   position: absolute;
   font-size: 32px;
-  left: 650px;
-  top: 350px;
+  left: 450px;
+  top: 450px;
   color: #24252a;
   
 }
@@ -116,42 +116,4 @@ button{
   display: inline-block;
 }
 
-
-
-
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-.bg-5 h3{
-  color:#fff;
-  }
-
-.bg-5 p{
-  font-style:italic;
-}
-.thumbnail {
-padding: 0 0 15px 0;
-border:none;
-border-radius:0;
-}
-.thumbnail p{
-margin-top:15px;
-color:#555;
-}
-.bg-1{
-background:#2d2d30;
-color:#bdbdbd;
-margin-top: 0px;
-padding-bottom: 100px;
-}
-.bg-6{
-background:white;
-color:black;
-}
-.bg-4 { 
-background-color: #2f2f2f; /* #2f2f2f */
-color: #ffffff;
-text-align: center;
-}
 

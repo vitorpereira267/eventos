@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shows.css">
+    <link rel="stylesheet" href="contacto.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -23,51 +23,36 @@
     <a href="contacto.html" class="cta"><button>Contact</button></a>
   </header>
 
+  
 
-  <div>
-
-    <div class="container-fluid bg-5" style="text-align: center;">
-            <p id="sec_01" style="text-align: center"> Desfrute dos melhores eventos</p><br>
-            
-            <div class="row">
-              <div class="col-sm-4">
-                  <div class="imagem">
-            <img src="imagens/01.jpg" style="width:45%; height:80%;" alt="Call of Duty Modern Warfare 3">
-                  </div>
-            <p style="font-size: 20px;">Tomorrowland</p>
-            <p>Data:31/12/2022 </p>
-            <p>Lugar: De Schorre, Bélgica</p>
-            <p style="font-size: 24px">500€</p>
-            <a href="compra.html"><button style="margin-left: 0;">Ticket</button></a>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="imagem"></div>
-            <img src="imagens/02.jpg" style="width:45%; height:80%;" alt="Rocket League">
-            <p style="font-size: 20px;">UltraMusicFestival</p>
-            <p>Data:23/05/2022 </p>
-            <p>Lugar: Bayfront Park, Miami, Florida, EUA</p>
-            <p style="font-size: 24px">220€</p>
-            <a href="compra.html"><button style="margin-left: 0;">Ticket</button></a>
-          </div>
-          
-          <div class="col-sm-4">
-            <div class="imagem">
-            <img src="imagens/03.jpg" style="width:45%; height:80%;" alt="Shadow of Tomb Raider">
-            </div>
-            <p style="font-size: 20px;">Electric Daisy Carnival</p>
-            <p>Data:15/02/2022 </p>
-            <p>Lugar: Las Vegas, Nevada </p>
-            <p style="font-size: 24px">150€</p>
-            <a href="compra.html"><button style="margin-left: 0;">Ticket</button></a>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
+<div class="container">
+  <div style="text-align:center">
+    <h2>Entre em contacto connosco</h2>
     
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="imagens/googlemap.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Primeiro Nome</label>
+        <input type="text" id="priNome" name="primeiroNome" placeholder="Primeiro nome..">
+        <label for="lname">Ultimo Nome</label>
+        <input type="text" id="ultNome" name="ultimoNome" placeholder="Ultimo nome..">
+        <label for="pais">Pais</label>
+        <select id="pais" name="pais">
+          <option value="portugal">Portugal</option>
+          <option value="espanha">Espanha</option>
+          <option value="frança">França</option>
+        </select>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva algo.." style="height:170px"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+</div>
 
 
 
@@ -112,5 +97,16 @@
       Coded by <a href="#">Vitor Pereira</a>.
       </p>
     </footer>
+    <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+      </script>
+      
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 </html>
